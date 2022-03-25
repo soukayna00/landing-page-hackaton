@@ -10,11 +10,11 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="/images.png" height="45px" width="45px">
+    <p id="logo">Hackathon </p>
      <nav>
         <ul class="nav_links">
-        <li><a href="#">à propos</a></li>
-        <li><a href="#">inscription</a></li>
+        <li><a href="#à propos">à propos</a></li>
+        <li><a href="#inscription">inscription</a></li>
       </ul>
     </header>
   </div>
@@ -27,23 +27,28 @@
       <form   class="form-example">
         <div class="form-example">
           <br> 
-          <input type="text" value="Nom" id="name" >
+          <input type="text" value="Nom" id="name" style="border: radius 20px; padding: 8px ; bor;">
         </div>
         <br>
         <div class="form-example">
-          <input type="prenom" value="Prenom" id="prenom"  >
+          <input type="prenom" value="Prenom" id="prenom" style="border: radius 20px; padding: 8px;" >
         </div>
         <br>
         <div class="form-example">
-          <input type="email" value="Email" id="email" >
+          <input type="email" value="Email" id="email"style="border: radius 20px; padding: 8px;" >
         </div>
         <br>
         <div class="form-example">
-          <input type="submit" value="inscriver!">
+          <input type="telephone" value="telephone" id="telephone"style="border: radius 20px; padding: 8px;" >
+        </div>
+        <br>
+        <div class="form-example">
+          <button type="submit" >Inscrivez!</button> 
       </div>
  
   </form>
-   <h1 id="demo"></h1>
+    <h1>Il reste au Hackathon</h1> 
+    <h1 id="demo"></h1>
 </div>
  
 
@@ -60,7 +65,7 @@
 
   <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+  var countDownDate = new Date("Jan 5, 2023  15:37:25").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
